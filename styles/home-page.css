@@ -1,0 +1,126 @@
+/* Global settings */
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Variables */
+:root {
+    --primary-color: #45ac75;
+    --secondary-color: #1c1c1c;
+    --subtitle: #d9d9d9;
+    --font-size: 1.6rem;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+/*Display flex*/
+.d-flex {
+    display: flex;
+}
+
+.content-sb {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Images*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Styles*/
+body {
+    background-image: url("../images/Texture Fill Bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Header*/
+ header {
+    padding: 50px 0px 0px 0px;
+}
+
+/*Logo*/
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/*Navigation*/
+.navigation {
+    list-style: none;
+}
+
+.navigation__li {
+    padding: 5px 25px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation__li:hover .navigation__link {
+    color: white;
+}
+
+.navigation__li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.navigation__li:hover::before {
+    background: black;
+    z-index: -1;
+    transform: scale(1);
+
+}
+
+.navigation--li--active {
+    background-color: black;
+}
+
+.navigation__link {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation--link--active {
+    color: white;
+}
+
+
+
