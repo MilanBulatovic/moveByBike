@@ -122,5 +122,17 @@ body {
     color: white;
 }
 
+.hamburger-icon {
+    display: none;
+}
+/*Media queries*/
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: flex;
+    }
 
+    .navigation {
+        flex-direction: column;
+    }
+}
 
