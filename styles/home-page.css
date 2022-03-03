@@ -1,7 +1,7 @@
 /* Global settings */
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 0;
     margin: 0;
 }
@@ -26,6 +26,7 @@ a {
 /* Variables */
 :root {
     --primary-color: #45ac75;
+    --blend-mode: #29ec84;
     --secondary-color: #1c1c1c;
     --subtitle: #d9d9d9;
     --font-size: 1.6rem;
@@ -35,6 +36,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative
     /* background-color: pink; */
 }
 
@@ -81,6 +83,7 @@ body {
     padding: 5px 25px;
     position: relative;
     transition: all 0.2s ease-in-out;
+    margin-left: 30px;
 }
 
 .navigation__li:hover .navigation__link {
@@ -135,4 +138,138 @@ body {
         flex-direction: column;
     }
 }
+/*Section by bike is better*/
+.by-bike-is-better {
+   
+    text-align: right;
+    padding-bottom: 20px;
+}
 
+.by-bike-is-better h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+
+
+/*Content*/
+.content {
+    background-color: var(--secondary-color);
+    padding: 80px 0px;
+    margin-top: 150px;
+}
+
+.content__left-side {
+    flex: 50%;
+}
+    
+
+.content__left-side--curved-text {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    font-size: 2.8rem;
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+    text-align: center;
+
+}
+
+.content__left-side--curved-text span {
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+
+.content__left-side--line-circle {
+    position: absolute;
+    width: 150px;
+    top: -60%;
+    left: 10%;
+    z-index: 5;
+}
+.content__left-side--circle {
+    background-image: url("../images/Layer\ 1.jpg");
+    background-size: cover;
+    background-position: 31px -101px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    transform: translateY(8%);
+    left: 5%;
+    overflow: hidden;
+}
+
+.content__left-side--circle::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 0;
+    height: inherit;
+    background-color: var(--primary-color);
+    mix-blend-mode: multiply;
+}
+
+.content__right-side {
+    width: 200px;
+    height: 100%;
+    flex: 50%;
+    padding-right: 80px;
+}
+
+.content__right-side__holder {
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.content__right-side__holder--title h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    line-height: 0.9em;
+    
+}
+
+.content__right-side__holder--title h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    position: absolute;
+    top: -50%;
+    
+}
+
+.content__right-side__holder--title h1 span {
+    color: var(--primary-color);
+    font-size: 8rem;
+}
+
+.content__right-side__holder--button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    outline: 0px;
+    border: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.content__right-side__text {
+    color: var(--subtitle);
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: pink;
+}

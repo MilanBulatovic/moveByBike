@@ -1,3 +1,3 @@
-const circleType = new CircleType(document.getElementById('test'));
+const circleType = new CircleType(document.getElementById('curved-text'));
 
-circleType.radius(180);
+circleType.radius(90);
