@@ -268,6 +268,44 @@ body {
     margin-top: 20px;
 }
 
+
+.content__right-side_float-circle{
+    position: absolute;
+}
+
+.content__right-side_float-circle.xs-circle {
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/xs-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -60%;
+    right: 12%;
+}
+
+.content__right-side_float-circle.s-circle {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/s-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -40%;
+    right: 0%;
+}
+
+.content__right-side_float-circle.m-circle {
+    width: 130px;
+    height: 130px;
+    background-image: url("../images/m-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0%;
+}
+
+/*Footer*/
 .footer {
     height: 200px;
     width: 100%;
